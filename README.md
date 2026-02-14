@@ -1,38 +1,37 @@
-# DormBound
-### Advanced Network Stack Optimizer 
+# DormBound v1.0.0
+### Advanced Network Stack Optimizer for Windows 11 & MSI Systems
 
-**DormBound** is a precision network utility engineered to reclaim gaming performance in dormitory and high-density residential settings. It optimizes the Windows 11 network layer to bypass common hardware bottlenecks found in shared environments.
+**DormBound** is a specialized network utility designed to stabilize latency in high-density dormitory environments. It optimizes the Windows 11 network layer to bypass common hardware bottlenecks found in shared router chains (e.g., ZTE gateways to TP-Link hallway units).
 
 ---
 
 ##  Compatibility
-DormBound is designed to be Universal but is specifically "Battle-Tested" for:
-* **Hardware**: Verified on MSI Gaming Series (Compatible with all x64 systems).
-* **OS**: Optimized for Windows 11.
-* **Network**: Router-agnostic; highly effective for ZTE, TP-Link, and Huawei gateways in multi-hop or "Double-NAT" configurations.
+- **Hardware**: Optimized for **MSI Gaming Laptops** (Compatible with all x64 systems).
+- **OS**: **Windows 11** (Optimized for Windows Terminal).
+- **Network**: Specifically tuned for **31+ Mbps symmetrical-leaning fiber lines**.
 
 ---
 
-##  Technical Breakdown
+##  Optimization Modes
 
-### 1. Heuristic Auto-Adaptability
-Features an integrated diagnostic engine that analyzes connection health before deployment. 
-* If latency exceeds the **15ms "Sweet Spot"**, the script automatically triggers a **Winsock Reset** to clear the network catalog.
-
-### 2. Packet Fragmentation Mitigation (MTU 1428)
-Locks the MTU to **1428** to ensure packets fit through the complex dorm router chain without being split. This preserves the **4ms baseline** during high-traffic periods.
-
-### 3. WLAN Scan Suppression
-Disables **WLAN Autoconfig** to prevent the Windows 11 background "Wi-Fi search" that causes massive periodic ping spikes.
-
-### 4. Service Killswitch
-Temporarily pauses the **Windows Update Service (wuauserv)** to prevent sudden bandwidth hijacking.
+| Mode | MTU | Purpose |
+| :--- | :--- | :--- |
+| **Balanced** | **1428** | Best for quiet hours. Maximizes download speed while maintaining low jitter. |
+| **Stability** | **1400** | Best for "Peak Hours." Forces smaller packets to prevent bufferbloat and 40ms+ lag spikes. |
 
 ---
 
-##  Usage Instructions
-1. Save the script as **DormBound.bat**.
-2. Right-click and **Run as Administrator**.
-3. Select **[1] Smart Game Start** before launching your game.
-4. Select **[2] Restore Normal** to return to system defaults.
+##  Key Technical Features
+* **Heuristic Analysis**: Detects network jitter before gaming; triggers an automatic **Winsock Reset** if latency exceeds a **15ms "Sweet Spot"**.
+* **Scan Suppression**: Disables Windows 11 background Wi-Fi scanning (WLAN Autoconfig) to eliminate periodic 200ms spikes.
+* **Service Lock**: Pauses the Windows Update service (`wuauserv`) to prevent background bandwidth hijacking.
+* **Fragment Control**: Uses aggressive MTU locking to ensure packets fit through multi-hop dorm router headers without splitting.
+
+---
+
+##  How to Use
+1. Download `DormBound.bat`.
+2. **Right-click** and select **"Run as Administrator"**.
+3. Choose **[1] Balanced** or **[2] Stability** based on your current dorm traffic.
+4. Run **[3] Restore Normal** when you are finished gaming to resume standard Windows services.
 
