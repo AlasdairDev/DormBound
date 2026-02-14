@@ -34,7 +34,7 @@ Windows background services periodically scan for nearby Wi-Fi signals to update
 
 ### 3. Bandwidth Reservation (Service Killswitch)
 
-On a **31 Mbps** connection, a single background "Windows Update" or "Telemetry" burst can consume your entire overhead.
+Background services often hijack the network path to check for updates or send telemetry data.
 
 * **The Fix**: DormBound pauses the **wuauserv** service and disables **Task Offloading**.
 * **The Result**: Your full bandwidth is dedicated to your gaming and Discord apps.
