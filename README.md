@@ -12,7 +12,6 @@ DormBound is designed to be **router-agnostic**. It improves performance regardl
 
 * **Fiber Gateways**: Works with standard ISP units like **ZTE** or **Huawei**.
 * **Third-Party Routers**: Optimized for daisy-chained setups involving **TP-Link Archer (A5/C50)**, **ASUS**, or **Tenda** units.
-* **Mobile Solutions**: Highly effective for users on **5G Mobile WiFi (SCR-01)** or **Smart Rocket SIM** setups where signal stability is varying.
 
 ---
 
