@@ -1,5 +1,5 @@
 # DormBound
-### Advanced Network Stack Optimizer for MSI Gaming Systems
+### Advanced Network Stack Optimizer 
 
 **DormBound** is a precision network utility engineered to reclaim gaming performance in dormitory and high-density residential settings. It optimizes the Windows 11 network layer to bypass common hardware bottlenecks found in shared environments.
 
