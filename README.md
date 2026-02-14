@@ -37,7 +37,7 @@ Windows background services periodically scan for nearby Wi-Fi signals to update
 Background services often hijack the network path to check for updates or send telemetry data.
 
 * **The Fix**: DormBound pauses the **wuauserv** service and disables **Task Offloading**.
-* **The Result**: Your full bandwidth is dedicated to your gaming and Discord apps.
+* **The Result**: Your full bandwidth is dedicated to your gaming and Browser/Discord/Spotify.
 
 ---
 
