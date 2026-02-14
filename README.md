@@ -1,4 +1,4 @@
-# DormBound# DormBound 
+# DormBound
 ### Network Optimization Utility for High-Density Dorm Environments
 
 **DormBound** is a lightweight, batch-based performance tool designed to stabilize latency in complex dormitory network topologies. It is engineered to solve the "Dorm Jitter" caused by daisy-chained routers (ZTE gateways to TP-Link hallway units) that often struggle with standard Windows networking defaults.
