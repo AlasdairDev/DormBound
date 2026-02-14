@@ -8,7 +8,7 @@
 ##  Compatibility
 DormBound is designed to be Universal but is specifically "Battle-Tested" for:
 * **Hardware**: Verified on MSI Gaming Series (Compatible with all x64 systems).
-* **OS**: Optimized for Windows 11 and Windows 10.
+* **OS**: Optimized for Windows 11.
 * **Network**: Router-agnostic; highly effective for ZTE, TP-Link, and Huawei gateways in multi-hop or "Double-NAT" configurations.
 
 ---
