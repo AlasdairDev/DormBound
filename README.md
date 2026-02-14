@@ -6,33 +6,42 @@
 
 ---
 
-##  Hardware Compatibility
+## Hardware Compatibility
 
 DormBound is designed to be **router-agnostic**. It improves performance regardless of your gateway hardware, including:
 
 * **Fiber Gateways**: Works with standard ISP units like **ZTE** or **Huawei**.
 * **Third-Party Routers**: Optimized for daisy-chained setups involving **TP-Link Archer (A5/C50)**, **ASUS**, or **Tenda** units.
+* **Mobile Solutions**: Compatible with portable hardware like **5G Pocket Wi-Fi (SCR-01)** or **Smart Rocket SIM** setups.
 
 ---
 
-##  Technical Breakdown
+## Technical Breakdown
 
-### 1. Packet Fragmentation Mitigation (MTU 1428)
+### 1. Heuristic Auto-Adaptability (Self-Healing Logic)
+
+DormBound features an integrated diagnostic engine that analyzes your connection health in real-time before deployment.
+
+* **Latency Thresholding**: The script performs a baseline analysis; if it detects an average latency higher than **15ms**, it identifies the environment as unstable.
+* **Automated Remediation**: Upon detecting instability, it automatically triggers a **Winsock Reset** to clear corrupted network catalogs and force a clean handshake with the ZTE/TP-Link routers.
+* **Silent Optimization**: Once the path is cleared, the logic disengages to ensure zero background CPU overhead during gameplay.
+
+### 2. Packet Fragmentation Mitigation (MTU 1428)
 
 In a dorm, your data often travels through a "double-NAT" or daisy-chained router setup. Standard 1500-byte packets often exceed the "Maximum Transmission Unit" of these combined links, forcing the routers to chop up (fragment) your data.
 
 * **The Fix**: DormBound locks your MTU to **1428**.
-* **The Result**: Packets flow through the ZTE/TP-Link chain in a single burst, eliminating the micro-stutters and "packet loss" icons in games like *Valorant*.
+* **The Result**: Packets flow through the network chain in a single burst, eliminating micro-stutters and "packet loss" icons in games like *Valorant*.
 
-### 2. WLAN Scan Suppression (Zero Jitter)
+### 3. WLAN Scan Suppression (Zero Jitter)
 
 Windows background services periodically scan for nearby Wi-Fi signals to update the "Available Networks" list.
 
-* **The Problem**: Every scan causes a massive 200ms+ ping spike as the Wi-Fi card briefly stops processing game data to listen for other routers.
+* **The Problem**: Every scan causes a massive **200ms+ ping spike** as the Wi-Fi card briefly stops processing game data to listen for other routers.
 * **The Fix**: DormBound disables **WLAN Autoconfig** while you play.
 * **The Result**: 100% stable latency without the "periodic spikes" typical of student housing.
 
-### 3. Bandwidth Reservation (Service Killswitch)
+### 4. Bandwidth Reservation (Service Killswitch)
 
 Background services often hijack the network path to check for updates or send telemetry data.
 
@@ -41,7 +50,7 @@ Background services often hijack the network path to check for updates or send t
 
 ---
 
-##  Usage Instructions
+## Usage Instructions
 
 1. **Clone the Repo**: Download `DormBound.bat`.
 2. **Elevation**: Right-click and **Run as Administrator** (Required to modify the `netsh` stack).
@@ -50,7 +59,7 @@ Background services often hijack the network path to check for updates or send t
 
 ---
 
-##  Performance Verification
+## Performance Verification
 
 After deployment, run the following command in an Admin CMD to verify the "Locked" state:
 
@@ -60,5 +69,3 @@ netsh interface ipv4 show subinterfaces
 ```
 
 *The **Wi-Fi** MTU column should now display **1428**.*
-
----
