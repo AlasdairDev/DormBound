@@ -32,9 +32,12 @@ echo     [5] EXIT
 echo.
 echo  ==============================================================================
 echo   SYSTEM STATE:
-  :: TOKENS=1: The logic you verified works for your system
-  for /f "tokens=1" %%a in ('netsh interface ipv4 show subinterface "Wi-Fi" ^| findstr "1400 1428 1492 1500"') do set "curMTU=%%a"
-  echo    Current MTU: !curMTU!  ^|  Status: [Ready]
+  for /f "tokens=1" %%a in ('netsh interface ipv4 show subinterface "Wi-Fi" ^| findstr "1400 1428 1492 1500"') do (
+      set "rawMTU=%%a"
+      :: Subtract 28 to show the actual Data Payload
+      set /a "payload=!rawMTU! - 28"
+  )
+  echo    Current Payload: !payload! bytes ^| Status: [Ready]
   netsh wlan show interfaces | findstr /C:"Auto configuration"
 echo  ==============================================================================
 echo.
