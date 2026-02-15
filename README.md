@@ -10,9 +10,9 @@
 - **OS**: **Windows 11** (Optimized for Windows Terminal).
 - Network:
 
-    - Fiber: Specifically tuned for 31+ Mbps symmetrical-leaning fiber lines.
+    - Fiber: Best for 30Mbps+ symmetrical fiber to lock in that low ping.
 
-    - Pocket Wi-Fi: Optimized for 4G LTE/5G Mobile Hotspots to stabilize jitter and prevent packet loss caused by cellular data deprioritization.
+    - Pocket Wi-Fi: Helps with stability on mobile data by matching your MTU to the tower's limit.
 
 ---
 
