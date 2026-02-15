@@ -10,7 +10,7 @@
 - **OS**: **Windows 11** (Optimized for Windows Terminal).
 - Network:
 
-    - Fiber: Best for 30Mbps+ symmetrical fiber to lock in that low ping.
+    - Fiber: Best for 30MB+ Fiber to keep your ping steady and stop lag spikes.
 
     - Pocket Wi-Fi: Helps with stability on mobile data by matching your MTU to the tower's limit.
 
