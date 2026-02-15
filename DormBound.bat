@@ -24,8 +24,8 @@ echo  ==========================================================================
 echo                          DORMBOUND NETWORK OPTIMIZER
 echo  ==============================================================================
 echo.
-echo     [1] BALANCED MODE   (MTU 1428)  ^<- Your original working setting
-echo     [2] STABILITY MODE  (MTU 1400)  ^<- Use if 1428 starts fragmenting
+echo     [1] BALANCED MODE   (Best Speed + Low Latency)       ^<- Try this first
+echo     [2] STABILITY MODE  (Best for Lag Spikes/Busy Dorms) ^<- Use if [1] lags
 echo     [3] RESTORE NORMAL  (Standard Windows Settings)
 echo     [4] VIEW PERFORMANCE LOG
 echo     [5] EXIT
