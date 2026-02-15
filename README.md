@@ -20,8 +20,8 @@
 
 | Mode | MTU | Purpose |
 | :--- | :--- | :--- |
-| **Balanced** | **1428** | Best for quiet hours. Maximizes download speed while maintaining low jitter. |
-| **Stability** | **1400** | Best for "Peak Hours." Forces smaller packets to prevent bufferbloat and 40ms+ lag spikes. |
+| **Balanced** | **1400** | Best for quiet hours. Maximizes download speed while maintaining low jitter. |
+| **Stability** | **1372** | Best for "Peak Hours." Forces smaller packets to prevent bufferbloat and 40ms+ lag spikes. |
 
 ---
 
