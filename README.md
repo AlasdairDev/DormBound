@@ -8,7 +8,11 @@
 ##  Compatibility
 - **Hardware**: Optimized for **MSI Gaming Laptops** (Compatible with all x64 systems).
 - **OS**: **Windows 11** (Optimized for Windows Terminal).
-- **Network**: Specifically tuned for **31+ Mbps symmetrical-leaning fiber lines**.
+- Network:
+
+    - Fiber: Specifically tuned for 31+ Mbps symmetrical-leaning fiber lines.
+
+    - Pocket Wi-Fi: Optimized for 4G LTE/5G Mobile Hotspots to stabilize jitter and prevent packet loss caused by cellular data deprioritization.
 
 ---
 
