@@ -1,41 +1,21 @@
-# DormBound v1.0.0
-### Advanced Network Stack Optimizer for Windows 11 & MSI Systems
+# DormBound Pro v2
 
-**DormBound** is a specialized network utility designed to stabilize latency in high-density dormitory environments. It optimizes the Windows 11 network layer to bypass common hardware bottlenecks found in shared router chains (e.g., ZTE gateways to TP-Link hallway units).
+**DormBound Pro** is a lightweight, high-performance network optimization script designed specifically for competitive gaming in complex dorm environments. It is optimized for "Daisy-Chained" router setups (e.g., A5 -> TL-WR -> C50) to ensure the lowest possible jitter and zero packet fragmentation.
 
----
+##  Pro Features
+* **Multimedia Class Scheduling (MMCSS) Tweak**: Modifies the Windows Registry to prioritize game packets over background Windows tasks.
+* **System Responsiveness Optimization**: Sets kernel-level priority to gaming processes to eliminate micro-stutters.
+* **Task Offload Bypass**: Forces the CPU to handle packet timing, bypassing cheap Wi-Fi chip processing lag.
+* **Daisy-Chain MTU Lock**: Smart-locks MTU to 1400 to prevent fragmentation across multiple router hops.
+* **Background Scan Freeze**: Disables Windows Wi-Fi "searching" to kill 500ms+ lag spikes.
 
-##  Compatibility
-- **Hardware**: Optimized for **MSI Gaming Laptops** (Compatible with all x64 systems).
-- **OS**: **Windows 11** (Optimized for Windows Terminal).
-- Network:
+##  Quick Start
+1. **Right-click** `DormBound.bat` and **Run as Administrator**.
+2. Select **[2] STABILITY MODE** for the best performance on daisy-chained routers.
+3. Keep the window open while playing.
+4. Select **[3] RESTORE NORMAL** when finished to re-enable standard Wi-Fi scanning.
 
-    - Fiber: Best for 30MB+ Fiber to keep your ping steady and stop lag spikes.
-
-    - Pocket Wi-Fi: Helps with stability on mobile data by matching your MTU to the tower's limit.
-
----
-
-##  Optimization Modes
-
-| Mode | MTU | Purpose |
-| :--- | :--- | :--- |
-| **Balanced** | **1400** | Best for quiet hours. Maximizes download speed while maintaining low jitter. |
-| **Stability** | **1372** | Best for "Peak Hours." Forces smaller packets to prevent bufferbloat and 40ms+ lag spikes. |
-
----
-
-##  Key Technical Features
-* **Heuristic Analysis**: Detects network jitter before gaming; triggers an automatic **Winsock Reset** if latency exceeds a **15ms "Sweet Spot"**.
-* **Scan Suppression**: Disables Windows 11 background Wi-Fi scanning (WLAN Autoconfig) to eliminate periodic 200ms spikes.
-* **Service Lock**: Pauses the Windows Update service (`wuauserv`) to prevent background bandwidth hijacking.
-* **Fragment Control**: Uses aggressive MTU locking to ensure packets fit through multi-hop dorm router headers without splitting.
-
----
-
-##  How to Use
-1. Download `DormBound.bat`.
-2. **Right-click** and select **"Run as Administrator"**.
-3. Choose **[1] Balanced** or **[2] Stability** based on your current dorm traffic.
-4. Run **[3] Restore Normal** when you are finished gaming to resume standard Windows services.
-
+##  Requirements
+* Windows 10/11
+* Administrative Privileges
+* Works with Riot Vanguard & Easy Anti-Cheat (Safe/No Injection).
