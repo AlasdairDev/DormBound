@@ -21,7 +21,7 @@ cls
 color 0F
 echo.
 echo  ==============================================================================
-echo                          DORMBOUND NETWORK OPTIMIZER 2.0
+echo                          DORMBOUND NETWORK OPTIMIZER 2.0.0
 echo  ==============================================================================
 echo.
 echo     [1] BALANCED MODE   (Best Speed + Low Latency)       ^<- Try this first
