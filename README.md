@@ -1,6 +1,6 @@
 # DormBound v2.0.0
 
-**DormBound Pro** is a lightweight, high-performance network optimization script designed specifically for competitive gaming in complex dorm environments. It is optimized for "Daisy-Chained" router setups (e.g., A5 -> TL-WR -> C50) to ensure the lowest possible jitter and zero packet fragmentation.
+**DormBound** is a lightweight, high-performance network optimization script designed specifically for competitive gaming in complex dorm environments. It is optimized for "Daisy-Chained" router setups (e.g., A5 -> TL-WR -> C50) to ensure the lowest possible jitter and zero packet fragmentation.
 
 ##  Pro Features
 * **Multimedia Class Scheduling (MMCSS) Tweak**: Modifies the Windows Registry to prioritize game packets over background Windows tasks.
